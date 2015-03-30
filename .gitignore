@@ -1,0 +1,5 @@
+undo
+tmp
+bundle/**
+.netrwhist
+session.vim
