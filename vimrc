@@ -94,6 +94,8 @@
     " load/save session
     nnoremap <F5> :wa<CR>:mksession! ~/.vim/session.vim<CR>
     nnoremap <F6> :so ~/.vim/session.vim<CR>
+    " find
+    nnoremap  :find 
 " }
 
 " Completion {
@@ -105,7 +107,8 @@
 
 " Autocommands {
     if has("autocmd")
-        au BufWritePre * :%s/\s\+$//e " Automatically delete trailing spaces
+        let blacklist = ['vim']
+        au BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Automatically delete trailing spaces
     endif
 " }
 
