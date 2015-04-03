@@ -43,7 +43,8 @@
 
 " Vim UI {
     colorscheme distinguished
-    :auto BufEnter * let &titlestring = hostname() . "/" . expand("%:p") " change window title
+    set title " show title
+    :auto BufEnter * let &titlestring = hostname() . ": " . expand("%:p") " change window title
     set cursorline  " highlight current line
     set ignorecase " case insensitive search
     set incsearch   " Incremental search
