@@ -36,7 +36,7 @@
     set undodir=~/.vim/undo
     set undofile " make undo persistent
     set history=1000
-    set scrolloff=5 " keep at least 5 lines above/below
+    set scrolloff=2 " keep at least 2 lines above/below
     set encoding=utf-8
     set t_Co=256 " use 256 colors
 " }
