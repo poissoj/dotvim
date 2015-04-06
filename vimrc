@@ -12,6 +12,7 @@
     Plugin 'scrooloose/syntastic'
     Plugin 'bling/vim-airline'
     Plugin 'jelera/vim-javascript-syntax'
+    Plugin 'ap/vim-css-color'
     Plugin 'marijnh/tern_for_vim' " run npm install in ~/.vim/bundle/tern_for_vim
     Plugin 'Valloric/YouCompleteMe' " run ./install.sh in ~/.vim/bundle/YouCompleteMe
 
