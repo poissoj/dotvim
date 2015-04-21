@@ -11,6 +11,7 @@
     Plugin 'walm/jshint.vim'
     Plugin 'scrooloose/syntastic'
     Plugin 'bling/vim-airline'
+    Plugin 'tpope/vim-vinegar'
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'ap/vim-css-color'
     Plugin 'marijnh/tern_for_vim' " run npm install in ~/.vim/bundle/tern_for_vim
