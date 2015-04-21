@@ -112,6 +112,7 @@
     if has("autocmd")
         let blacklist = ['vim']
         au BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Automatically delete trailing spaces
+        au FileType html,xhtml let b:delimitMate_autoclose = 0
     endif
 " }
 
