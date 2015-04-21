@@ -40,6 +40,7 @@
     set scrolloff=2 " keep at least 2 lines above/below
     set encoding=utf-8
     set t_Co=256 " use 256 colors
+    set backspace=indent,eol,start " backspace through anything in insert mode. Necessary for delimitMate expand cr option
 " }
 
 " Vim UI {
