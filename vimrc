@@ -33,7 +33,7 @@
     filetype plugin indent on " load filetype plugin/indent settings
     set autochdir " Use the current file's directory as Vim's working directory
     set hidden " change buffers without saving
-    set wildignore=*.jpg,*.gif,*.png " ignore this list file extensions
+    set wildignore=*/node_modules/*,*.jpg,*.gif,*.png " ignore this list file extensions
     set wildmenu " show autocomplete menus
     set wildmode=list:longest,full " command-line completion
     set shm=a " abbreviate all messages
