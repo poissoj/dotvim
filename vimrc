@@ -14,6 +14,7 @@
     Plugin 'tpope/vim-vinegar'
     Plugin 'jelera/vim-javascript-syntax'
     Plugin 'ap/vim-css-color'
+    Plugin 'kien/ctrlp.vim'
     Plugin 'marijnh/tern_for_vim' " run npm install in ~/.vim/bundle/tern_for_vim
     Plugin 'Valloric/YouCompleteMe' " run ./install.sh in ~/.vim/bundle/YouCompleteMe
 
@@ -124,3 +125,4 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:delimitMate_expand_cr = 1
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
