@@ -13,8 +13,11 @@
     Plugin 'bling/vim-airline'
     Plugin 'tpope/vim-vinegar'
     Plugin 'jelera/vim-javascript-syntax'
+    Plugin 'tpope/vim-surround'
+    Plugin 'airblade/vim-gitgutter'
     Plugin 'ap/vim-css-color'
     Plugin 'kien/ctrlp.vim'
+    Plugin 'tpope/vim-fugitive'
     Plugin 'marijnh/tern_for_vim' " run npm install in ~/.vim/bundle/tern_for_vim
     Plugin 'Valloric/YouCompleteMe' " run ./install.sh in ~/.vim/bundle/YouCompleteMe
 
