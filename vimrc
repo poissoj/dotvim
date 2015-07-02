@@ -59,6 +59,7 @@
     set showcmd     " Show (partial) command in status line.
     set showmatch   " Show matching brackets.
     set smartcase   " Do smart case matching
+    set suffixesadd=.js " Allow to gf on require('./jsfile')
     " set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
     "              | | | | |  |   |      |  |     |    |
     "              | | | | |  |   |      |  |     |    + current
