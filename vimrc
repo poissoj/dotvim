@@ -130,3 +130,4 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:delimitMate_expand_cr = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
+let g:ycm_autoclose_preview_window_after_completion = 1
