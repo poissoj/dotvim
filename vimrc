@@ -1,36 +1,29 @@
-" Vundle {
-    set nocompatible
-    filetype off
-    set rtp+=~/.vim/bundle/Vundle.vim
-    call vundle#begin()
-    Plugin 'gmarik/Vundle.vim'
-" }
+set nocompatible
 
 " Plugins {
-    Plugin 'Raimondi/delimitMate'
-    Plugin 'walm/jshint.vim'
-    Plugin 'scrooloose/syntastic'
-    Plugin 'bling/vim-airline'
-    Plugin 'tpope/vim-vinegar'
-    Plugin 'jelera/vim-javascript-syntax'
-    Plugin 'tpope/vim-surround'
-    Plugin 'airblade/vim-gitgutter'
-    Plugin 'ap/vim-css-color'
-    Plugin 'kien/ctrlp.vim'
-    Plugin 'tpope/vim-fugitive'
-    Plugin 'marijnh/tern_for_vim' " run npm install in ~/.vim/bundle/tern_for_vim
-    Plugin 'Valloric/YouCompleteMe' " run ./install.sh in ~/.vim/bundle/YouCompleteMe
-
-    call vundle#end()
+    call plug#begin()
+    Plug 'Raimondi/delimitMate'
+    Plug 'walm/jshint.vim'
+    Plug 'scrooloose/syntastic'
+    Plug 'bling/vim-airline'
+    Plug 'tpope/vim-vinegar'
+    Plug 'jelera/vim-javascript-syntax'
+    Plug 'tpope/vim-surround'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'ap/vim-css-color'
+    Plug 'kien/ctrlp.vim'
+    Plug 'tpope/vim-fugitive'
+    Plug 'marijnh/tern_for_vim', { 'do': 'npm install'}
+    Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
+    call plug#end()
 " }
+" python support in neovim: sudo pip install neovim
 
 " Basics {
     set background=dark " we plan to use a dark background
-    syntax on " syntaw highlighting on
 " }
 
 " General {
-    filetype plugin indent on " load filetype plugin/indent settings
     set autochdir " Use the current file's directory as Vim's working directory
     set hidden " change buffers without saving
     set wildignore=*/node_modules/*,*.jpg,*.gif,*.png " ignore this list file extensions
