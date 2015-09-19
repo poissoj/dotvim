@@ -76,7 +76,6 @@ set nocompatible
     "              | +-- rodified flag in square brackets
     "              +-- full path to file in the buffer
     set statusline+=%#warningmsg#
-    set statusline+=%{SyntasticStatuslineFlag()}
     set statusline+=%*
 
 " }
