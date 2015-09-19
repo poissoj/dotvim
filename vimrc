@@ -4,7 +4,7 @@ set nocompatible
     call plug#begin()
     Plug 'Raimondi/delimitMate'
     Plug 'walm/jshint.vim'
-    Plug 'scrooloose/syntastic'
+    Plug 'benekastah/neomake'
     Plug 'bling/vim-airline'
     Plug 'tpope/vim-vinegar'
     Plug 'jelera/vim-javascript-syntax'
@@ -115,12 +115,11 @@ set nocompatible
     endif
 " }
 
+" Neomake
+autocmd! BufWritePost * Neomake
+let g:neomake_javascript_enabled_makers = ['jshint']
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 let g:delimitMate_expand_cr = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ycm_autoclose_preview_window_after_completion = 1
