@@ -8,11 +8,14 @@ set nocompatible
     Plug 'bling/vim-airline'
     Plug 'tpope/vim-vinegar'
     Plug 'jelera/vim-javascript-syntax'
+    Plug 'pangloss/vim-javascript'
     Plug 'tpope/vim-surround'
     Plug 'airblade/vim-gitgutter'
     Plug 'ap/vim-css-color'
     Plug 'kien/ctrlp.vim'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-repeat'
+    Plug 'tpope/vim-unimpaired'
     Plug 'marijnh/tern_for_vim', { 'do': 'npm install'}
     Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
     call plug#end()
