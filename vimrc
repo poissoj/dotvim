@@ -18,6 +18,7 @@ set nocompatible
     Plug 'tpope/vim-unimpaired'
     Plug 'marijnh/tern_for_vim', { 'do': 'npm install'}
     Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
+    Plug 'mattn/emmet-vim'
     call plug#end()
 " }
 " python support in neovim: sudo pip install neovim
