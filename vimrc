@@ -122,8 +122,24 @@ set nocompatible
 " Neomake
 autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
+
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#whitespace#enabled = 0
 let g:delimitMate_expand_cr = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Handle large files
+let g:LargeFile = 1024 * 1024 * 10
+augroup LargeFile
+autocmd BufReadPre * let f=getfsize(expand("<afile>")) | if f > g:LargeFile || f == -2 | call LargeFile() | endif
+augroup END
+
+function LargeFile()
+    set eventignore+=FileType " no syntax highlighting etc
+    setlocal bufhidden=unload " save memory when other file is viewed
+    setlocal buftype=nowrite " is read-only (write with :w new_filename)
+    setlocal undolevels=-1 " no undo possible
+    autocmd VimEnter *  echo "The file is larger than " . (g:LargeFile / 1024 / 1024) . " MB, so some options are changed (see .vimrc for details)."
+endfunction
