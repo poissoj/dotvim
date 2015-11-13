@@ -16,7 +16,7 @@ set nocompatible
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-unimpaired'
-    Plug 'marijnh/tern_for_vim', { 'do': 'npm install'}
+    Plug 'ternjs/tern_for_vim', { 'do': 'npm install'}
     Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
     Plug 'mattn/emmet-vim'
     call plug#end()
