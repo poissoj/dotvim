@@ -12,7 +12,7 @@ set nocompatible
     Plug 'tpope/vim-surround'
     Plug 'airblade/vim-gitgutter'
     Plug 'ap/vim-css-color'
-    Plug 'kien/ctrlp.vim'
+    Plug 'ctrlpvim/ctrlp.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-repeat'
     Plug 'tpope/vim-unimpaired'
