@@ -43,6 +43,7 @@ set nocompatible
     set encoding=utf-8
     set t_Co=256 " use 256 colors
     set backspace=indent,eol,start " backspace through anything in insert mode. Necessary for delimitMate expand cr option
+    set backupcopy=yes " allows Webpack to see files change
 " }
 
 " Vim UI {
