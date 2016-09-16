@@ -120,17 +120,8 @@ set nocompatible
 " }
 
 " Neomake
+autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
-let g:neomake_javascript_eslint_args = ['--fix']
-
-" Callback for reloading file in buffer when eslint has finished
-function! s:Neomake_callback(options)
-  if (a:options.name ==? 'eslint') && (a:options.has_next == 0)
-    edit
-  endif
-endfunction
-
-autocmd BufWritePost * call neomake#Make(1, [], function('s:Neomake_callback'))
 
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
