@@ -129,6 +129,7 @@ let g:airline#extensions#whitespace#enabled = 0
 let g:delimitMate_expand_cr = 1
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_by_filename = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 
 " Handle large files
