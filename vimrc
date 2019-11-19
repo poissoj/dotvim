@@ -19,6 +19,7 @@ set nocompatible
     Plug 'ternjs/tern_for_vim', { 'do': 'npm install'}
     Plug 'Valloric/YouCompleteMe', { 'do': 'python install.py' }
     Plug 'mattn/emmet-vim'
+    Plug 'https://gitlab.com/gi1242/vim-emoji-ab'
     call plug#end()
 " }
 " python support in neovim: sudo pip install neovim
@@ -117,6 +118,7 @@ set nocompatible
         au BufWritePre * if index(blacklist, &ft) < 0 | :%s/\s\+$//e " Automatically delete trailing spaces
         au FileType html,xhtml let b:delimitMate_autoclose = 0
         au FileType javascript setlocal formatprg=prettier\ --stdin\ --single-quote\ --print-width\ 100\ --tab-width\ 4
+        au FileType html,markdown,text,mail,gitcommit runtime macros/emoji-ab.vim
     endif
 " }
 
